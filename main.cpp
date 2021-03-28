@@ -1,6 +1,8 @@
 #include <QCoreApplication>
 #include <QDebug>
 #include <QProcess>
+#include <QStandardPaths>
+#include <QFile>
 #include <NetworkManagerQt/Manager>
 #include <NetworkManagerQt/Device>
 #include <NetworkManagerQt/WirelessDevice>
