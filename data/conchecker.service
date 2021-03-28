@@ -1,0 +1,14 @@
+[Unit]
+Description=IOT Gateway Connection Checker Service
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+ExecStart=/opt/conChecker/bin/conChecker
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+Alias=concheckerdaemon.service
